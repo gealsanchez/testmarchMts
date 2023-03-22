@@ -18,5 +18,5 @@ test('renders Header component', () => {
       <Header />
     </Router>,
   );
-  expect(getByText('I Love NBA')).toBeInTheDocument();
+  expect(getByText('the NBA DB')).toBeInTheDocument();
 });

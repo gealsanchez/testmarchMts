@@ -1,9 +1,9 @@
-import TotalWorld from '../components/TotalWorld';
+import TotalTeams from '../components/TotalTeams';
 import Cities from '../components/Cities';
 
 const Home = () => (
   <div>
-    <TotalWorld />
+    <TotalTeams />
     <div className="players-city">CITIES</div>
     <Cities />
   </div>

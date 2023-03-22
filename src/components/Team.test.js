@@ -11,7 +11,7 @@ const city = {
   image: 'https://www.countryflags.io/ar/flat/64.png',
 };
 
-test('renders Country component', () => {
+test('renders Team component', () => {
   const { getByText } = render(
     <Provider store={store}>
       <Router>

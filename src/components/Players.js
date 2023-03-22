@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import ShowIcon from '../assets/images/ShowIcon.png';
 
-const Players = ({ countrySelected }) => {
+const Players = ({ citySelected }) => {
   const players = useSelector((state) => state.players.players);
 
   return (
     <ul className="list-players">
       {players.map((player) => {
-        if (player.city === countrySelected.city) {
+        if (player.city === citySelected.city) {
           return (
             <li className="player-container" key={player.id}>
               <h2 className="city-text">{player.name}</h2>
@@ -33,7 +33,7 @@ const Players = ({ countrySelected }) => {
 export default Players;
 
 Players.propTypes = {
-  countrySelected: PropTypes.shape({
+  citySelected: PropTypes.shape({
     id: PropTypes.number,
     city: PropTypes.string,
     name: PropTypes.string,

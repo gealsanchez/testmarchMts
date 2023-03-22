@@ -5,21 +5,21 @@ import '@testing-library/jest-dom/extend-expect';
 import Players from './Players';
 import store from '../redux/configureStore';
 
-const countrySelected = {
+const citySelected = {
   id: 1,
   name: 'Argentina',
   image: 'https://restcountries.eu/data/arg.svg',
 };
 
-describe('Recipes', () => {
-  test('renders Recipes component', () => {
+describe('Players', () => {
+  test('renders Players component', () => {
     render(
       <Provider store={store}>
         <Router>
-          <Players countrySelected={countrySelected} />
+          <Players citySelected={citySelected} />
         </Router>
       </Provider>,
     );
-    expect(document.querySelector('.list-recipes')).toBeInTheDocument();
+    expect(document.querySelector('.list-players')).toBeInTheDocument();
   });
 });

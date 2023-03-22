@@ -24,7 +24,7 @@ const Team = (props) => {
           <img src={ShowIcon} alt="Show Icon" />
         </button>
       </Link>
-      <img src={image} alt="City" />
+      <img src={image} className="map" alt="City" />
       <h2 className="city-text">{city}</h2>
       <p className="text-views">{totalCountryViews}</p>
     </li>

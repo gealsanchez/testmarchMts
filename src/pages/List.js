@@ -6,7 +6,7 @@ import Players from '../components/Players';
 
 const List = () => {
   const { id } = useParams();
-  const [countrySelected, setCountrySelected] = useState(+id);
+  const [citySelected, setCountrySelected] = useState(+id);
   const cities = useSelector((state) => state.cities.cities);
 
   useEffect(() => {
@@ -15,9 +15,9 @@ const List = () => {
 
   return (
     <div>
-      <TotalCity countrySelected={countrySelected} />
+      <TotalCity citySelected={citySelected} />
       <div className="players-city">PLAYERS LIST</div>
-      <Players countrySelected={countrySelected} />
+      <Players citySelected={citySelected} />
     </div>
   );
 };

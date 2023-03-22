@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #b70303;
+  background-color: #c60000;
 }
 
 nav {
@@ -28,12 +28,13 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fd5294;
+  background-color: #d20000;
 }
 
 .world-map-img {
   width: 45%;
   padding: 10% 0 10% 1%;
+  filter: invert(100%) sepia(77%) saturate(0%) hue-rotate(4deg) brightness(101%) contrast(101%);
 }
 
 .total-world-container-text {
@@ -56,7 +57,7 @@ nav {
 }
 
 .players-city {
-  background-color: #01304f;
+  background-color: #1d0061;
   padding: 2%;
   font-size: x-small;
 }
@@ -74,7 +75,11 @@ nav {
   text-align: end;
   width: 44%;
   padding: 3%;
-  background-color: #cc4074;
+  background-color: #1300a5;
+}
+
+.map{
+  filter: invert(97%) sepia(97%) saturate(13%) hue-rotate(253deg) brightness(102%) contrast(85%);
 }
 
 .city-container:nth-child(25),
@@ -90,7 +95,7 @@ nav {
 .city-container:nth-child(5),
 .city-container:nth-child(4),
 .city-container:nth-child(1) {
-  background-color: #db4781;
+  background-color: #110091;
 }
 
 .show-icon {
@@ -109,12 +114,12 @@ nav {
 .player-container {
   display: flex;
   align-items: center;
-  background-color: #cc4074;
+  background-color: #100089;
   padding: 5%;
 }
 
 .player-container:nth-child(even) {
-  background-color: #db4781;
+  background-color: #1300a5;
 }
 
 .player-list-container-views {
@@ -137,14 +142,14 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #cc4074;
+  background-color: #d20000;
 }
 
 .total-city-second-background {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #db4781;
+  background-color: #1300a5;
 }
 
 form {

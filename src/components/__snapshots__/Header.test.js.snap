@@ -18,7 +18,7 @@ exports[`renders Header component 1`] = `
         </a>
       </button>
       <h1>
-        I Love NBA
+        the NBA DB
       </h1>
       <div>
         <button

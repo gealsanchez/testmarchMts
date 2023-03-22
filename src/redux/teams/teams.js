@@ -1,11 +1,11 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import TeamService from '../../services/TeamService';
-import city1 from '../../assets/images/city1.png';
-import city2 from '../../assets/images/city2.png';
-import city3 from '../../assets/images/city3.png';
-import city4 from '../../assets/images/city4.png';
-import city5 from '../../assets/images/city5.png';
-import city6 from '../../assets/images/city6.png';
+import city1 from '../../assets/images/city1.svg';
+import city2 from '../../assets/images/city2.svg';
+import city3 from '../../assets/images/city3.svg';
+import city4 from '../../assets/images/city4.svg';
+import city5 from '../../assets/images/city5.svg';
+import city6 from '../../assets/images/city6.svg';
 
 const initialState = {
   cities: [

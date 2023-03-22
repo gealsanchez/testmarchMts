@@ -14,7 +14,7 @@ describe('Cities', () => {
         </Router>
       </Provider>,
     );
-    const playersList = document.querySelector('.countries-container');
+    const playersList = document.querySelector('.cities-container');
     expect(playersList).toBeInTheDocument();
   });
 });
