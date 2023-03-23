@@ -10,7 +10,7 @@ const List = () => {
   const cities = useSelector((state) => state.cities.cities);
 
   useEffect(() => {
-    setCountrySelected(cities.find((country) => country.id === +id));
+    setCountrySelected(cities.find((city) => city.id === +id));
   }, [cities, id]);
 
   return (

@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import WorldMap from '../assets/images/world-map.svg';
+import Search from './Search';
 
 const TotalTeams = () => {
   const players = useSelector((state) => state.players.players);
@@ -16,6 +17,7 @@ const TotalTeams = () => {
           <span className="player-views">{totalViews}</span>
           views
         </p>
+        <Search />
       </div>
     </section>
   );

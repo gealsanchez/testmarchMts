@@ -39,8 +39,8 @@ const teamsReducer = (state = initialState, action) => {
     case 'cities/fetchTeams/fulfilled':
       return {
         ...state,
-        cities: state.cities.map((country, index) => ({
-          ...country,
+        cities: state.cities.map((city, index) => ({
+          ...city,
           city: action.payload[index].city,
           team: action.payload[index].name,
         })),
